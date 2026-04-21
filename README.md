@@ -108,11 +108,14 @@ Tested on:
 
 ```
 expense-tracker/
-├── index.html          # Main HTML file
+├── index.html          # Login page
+├── signup.html         # Registration page
+├── dashboard.html      # Main dashboard
 ├── styles.css          # All styling
 ├── db.js              # IndexedDB database operations
-├── auth.js            # Authentication logic
-├── app.js             # Main application logic
+├── login.js           # Login page logic
+├── signup.js          # Signup page logic
+├── dashboard.js       # Dashboard logic
 └── README.md          # This file
 ```
 

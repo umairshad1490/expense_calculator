@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Expense Tracker</title>
+    <title>Sign Up - Expense Tracker</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -42,28 +42,35 @@
             
             <div class="auth-right">
                 <div class="auth-box">
-                    <h2>Welcome Back</h2>
-                    <p class="subtitle">Login to access your expense dashboard</p>
+                    <h2>Create Account</h2>
+                    <p class="subtitle">Start tracking your expenses today</p>
                     
-                    <form id="loginFormElement">
+                    <form id="registerFormElement">
                         <div class="form-group">
-                            <label for="loginUsername">Username</label>
-                            <input type="text" id="loginUsername" placeholder="Enter your username" required>
+                            <label for="registerUsername">Username</label>
+                            <input type="text" id="registerUsername" placeholder="Choose a username" required minlength="3">
+                            <small>Minimum 3 characters</small>
                         </div>
                         
                         <div class="form-group">
-                            <label for="loginPassword">Password</label>
-                            <input type="password" id="loginPassword" placeholder="Enter your password" required>
+                            <label for="registerPassword">Password</label>
+                            <input type="password" id="registerPassword" placeholder="Create a password" required minlength="6">
+                            <small>Minimum 6 characters</small>
                         </div>
                         
-                        <button type="submit" class="btn btn-primary">Login</button>
+                        <div class="form-group">
+                            <label for="registerConfirmPassword">Confirm Password</label>
+                            <input type="password" id="registerConfirmPassword" placeholder="Confirm your password" required>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Create Account</button>
                     </form>
                     
                     <div id="authMessage" class="message"></div>
                     
                     <p class="switch-auth">
-                        Don't have an account? 
-                        <a href="signup.html">Create one now</a>
+                        Already have an account? 
+                        <a href="index.html">Login here</a>
                     </p>
                 </div>
             </div>
@@ -71,6 +78,6 @@
     </div>
 
     <script src="db.js"></script>
-    <script src="login.js"></script>
+    <script src="signup.js"></script>
 </body>
 </html>
